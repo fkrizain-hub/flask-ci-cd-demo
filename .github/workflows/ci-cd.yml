@@ -41,7 +41,7 @@ jobs:
     - name: Login ke Docker Hub
       uses: docker/login-action@v3
       with:
-        username: ${{ secrets.DOCKER_USERNAME }}
+        username: fikriizain
         password: ${{ secrets.DOCKERHUB_TOKEN }}
         
     - name: Setup Docker Buildx
