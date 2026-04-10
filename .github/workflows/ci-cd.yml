@@ -31,7 +31,7 @@ jobs:
       run: |
         pytest test_app.py -v
     - name: Run Trivity vulnerability scanner
-      uses: aquasecurity/trivy-action@0.28.0
+      uses: aquasecurity/trivy-action@0.35.0
       with:
        scan-type: 'fs'
        scan-ref: '.'
