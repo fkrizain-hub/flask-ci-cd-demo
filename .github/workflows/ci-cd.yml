@@ -30,9 +30,9 @@ jobs:
     - name: Jalankan unit test
       run: |
         pytest test_app.py -v
-    -name: Run Trivity vulnerability scanner
-     uses: aquasecurity/trivy-action@master
-     with:
+    - name: Run Trivity vulnerability scanner
+      uses: aquasecurity/trivy-action@0.28.0
+      with:
        scan-type: 'fs'
        scan-ref: '.'
        format: 'table'
